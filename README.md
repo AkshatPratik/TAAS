@@ -202,7 +202,7 @@ At a high level, TAAS follows a modern client-side web application architecture:
        │ Assessments → Skills → Performance →        │
        │ Skill Gaps → AI Analysis → Career Roadmap   │
        └─────────────────────────────────────────────┘
-
+---
 # 📂 Project Structure
 
 A typical TAAS project structure looks like this:
