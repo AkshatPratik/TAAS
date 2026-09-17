@@ -111,9 +111,9 @@ The frontend is built using a modern React component architecture with:
 
 ---
 
-# 🛠️ Technology Stack
+## 🛠️ Technology Stack
 
-## Frontend
+### Frontend
 
 | Technology | Purpose |
 |---|---|
@@ -127,7 +127,7 @@ The frontend is built using a modern React component architecture with:
 | Framer Motion | Animations |
 | Lucide React | Icons |
 
-## State & Data Management
+### State & Data Management
 
 | Technology | Purpose |
 |---|---|
@@ -136,7 +136,7 @@ The frontend is built using a modern React component architecture with:
 | Zod | Schema validation |
 | Supabase JS | Backend/database integration |
 
-## Backend & Database
+### Backend & Database
 
 TAAS uses **Supabase** for backend services and database integration.
 
@@ -148,7 +148,7 @@ Supabase provides capabilities such as:
 - User management
 - Persistent application data
 
-## AI / Machine Learning
+### AI / Machine Learning
 
 TAAS includes browser-based machine-learning capabilities using:
 
@@ -160,7 +160,7 @@ TAAS includes browser-based machine-learning capabilities using:
 
 These technologies are particularly relevant to the platform's proctoring and future AI-powered capabilities.
 
-## Testing
+### Testing
 
 The project includes:
 
@@ -173,7 +173,7 @@ These tools allow TAAS to support both component-level testing and browser-based
 
 ---
 
-# 🏗️ Architecture
+## 🏗️ Architecture
 
 At a high level, TAAS follows a modern client-side web application architecture:
 
@@ -202,51 +202,57 @@ At a high level, TAAS follows a modern client-side web application architecture:
        │ Assessments → Skills → Performance →        │
        │ Skill Gaps → AI Analysis → Career Roadmap   │
        └─────────────────────────────────────────────┘
----
-# 📂 Project Structure
-
-A typical TAAS project structure looks like this:
-
-    TAAS/
-    ├── public/
-    │
-    ├── src/
-    │   ├── components/
-    │   │   ├── ui/
-    │   │   └── ...
-    │   │
-    │   ├── pages/
-    │   │   └── ...
-    │   │
-    │   ├── hooks/
-    │   │   └── ...
-    │   │
-    │   ├── lib/
-    │   │   └── ...
-    │   │
-    │   ├── integrations/
-    │   │   └── supabase/
-    │   │
-    │   ├── App.tsx
-    │   ├── main.tsx
-    │   └── ...
-    │
-    ├── tests/
-    │
-    ├── package.json
-    ├── vite.config.ts
-    ├── tsconfig.json
-    ├── tailwind.config.ts
-    ├── postcss.config.js
-    └── README.md
-
-> The exact directory structure may vary depending on the current implementation.
+```
 
 ---
 
-# ⚙️ Getting Started
+## 📂 Project Structure
 
-## Prerequisites
+```text
+TAAS/
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── ui/
+│   │   └── ...
+│   │
+│   ├── pages/
+│   │   └── ...
+│   │
+│   ├── hooks/
+│   │   └── ...
+│   │
+│   ├── lib/
+│   │   └── ...
+│   │
+│   ├── integrations/
+│   │   └── supabase/
+│   │
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── ...
+│
+├── tests/
+│
+├── supabase/
+│
+├── package.json
+├── vite.config.ts
+├── tsconfig.json
+├── tailwind.config.ts
+├── postcss.config.js
+├── .env.example
+└── README.md
+```
+
+> The exact directory structure may evolve as the project develops.
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
 
 Make sure the following are installed:
 
@@ -256,36 +262,46 @@ Make sure the following are installed:
 
 Verify your installation:
 
-    node --version
-    npm --version
-    git --version
+```bash
+node --version
+npm --version
+git --version
+```
 
----
-
-## 📥 Installation
+### Installation
 
 Clone the repository:
 
-    git clone <repository-url>
+```bash
+git clone <repository-url>
+```
 
-Navigate into the project directory:
+Navigate into the project:
 
-    cd TAAS
+```bash
+cd TAAS
+```
 
-Install the project dependencies:
+Install dependencies:
 
-    npm install
+```bash
+npm install
+```
 
 ---
 
-# 🔑 Environment Variables
+## 🔑 Environment Variables
 
 TAAS uses Supabase for backend services.
 
-Create a `.env` file in the project root:
+Create a `.env` file in the project root.
 
-    VITE_SUPABASE_URL=your_supabase_project_url
-    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+Example:
+
+```env
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
 ### Important
 
@@ -295,143 +311,163 @@ For production deployments, configure environment variables through your hosting
 
 ---
 
-# 💻 Development
+## 💻 Development
 
 Start the development server:
 
-    npm run dev
+```bash
+npm run dev
+```
 
 Vite will display the local development URL in the terminal.
 
 ---
 
-# 📦 Production Build
+## 📦 Production Build
 
 Create a production build:
 
-    npm run build
+```bash
+npm run build
+```
 
 Create a development-mode build:
 
-    npm run build:dev
+```bash
+npm run build:dev
+```
 
 Preview the production build locally:
 
-    npm run preview
+```bash
+npm run preview
+```
 
 ---
 
-# 🧹 Code Quality
+## 🧹 Code Quality
 
 Run ESLint:
 
-    npm run lint
+```bash
+npm run lint
+```
 
 ---
 
-# 🧪 Testing
+## 🧪 Testing
 
 Run the test suite:
 
-    npm run test
+```bash
+npm run test
+```
 
 Run tests in watch mode:
 
-    npm run test:watch
+```bash
+npm run test:watch
+```
 
 TAAS also includes Playwright for browser-based end-to-end testing.
 
 ---
 
-# 📝 Assessment Flow
+## 📝 Assessment Flow
 
 A typical TAAS assessment workflow looks like this:
 
-    User
-     │
-     ▼
-    Select Assessment
-     │
-     ▼
-    Assessment Instructions
-     │
-     ▼
-    Start Test
-     │
-     ├───────────────┐
-     │               │
-     ▼               ▼
-    Questions      Proctoring
-     │               │
-     └───────┬───────┘
-             ▼
-        Submit Test
-             │
-             ▼
-       Evaluate Answers
-             │
-             ▼
-       Generate Results
-             │
-             ▼
-        Skill Analysis
-             │
-             ▼
-        Identify Gaps
-             │
-             ▼
-        AI Career Roadmap
+```text
+User
+ │
+ ▼
+Select Assessment
+ │
+ ▼
+Assessment Instructions
+ │
+ ▼
+Start Test
+ │
+ ├───────────────┐
+ │               │
+ ▼               ▼
+Questions      Proctoring
+ │               │
+ └───────┬───────┘
+         ▼
+    Submit Test
+         │
+         ▼
+   Evaluate Answers
+         │
+         ▼
+   Generate Results
+         │
+         ▼
+    Skill Analysis
+         │
+         ▼
+    Identify Gaps
+         │
+         ▼
+   AI Career Roadmap
+```
 
 ---
 
-# 🤖 AI/ML Roadmap
+## 🤖 AI/ML Roadmap
 
 AI is an important part of the future direction of TAAS.
 
-## 1. Skill Gap Detection
+### 1. Skill Gap Detection
 
 Analyze assessment results to identify areas where a user has demonstrated lower proficiency.
 
-## 2. Personalized Learning Paths
+### 2. Personalized Learning Paths
 
 Generate learning sequences based on:
 
-    Current Skills
-          +
-    Assessment Results
-          +
-    Target Career
-          ↓
-    Personalized Learning Path
+```text
+Current Skills
+      +
+Assessment Results
+      +
+Target Career
+      ↓
+Personalized Learning Path
+```
 
-## 3. Career Roadmap Generation
+### 3. Career Roadmap Generation
 
 The platform can generate individualized career development roadmaps:
 
-    Current Level
-          │
-          ▼
-    Skill Assessment
-          │
-          ▼
-    Skill Gap Analysis
-          │
-          ▼
-    Foundation Skills
-          │
-          ▼
-    Intermediate Skills
-          │
-          ▼
-    Advanced Skills
-          │
-          ▼
-    Projects / Experience
-          │
-          ▼
-    Target Career Role
+```text
+Current Level
+      │
+      ▼
+Skill Assessment
+      │
+      ▼
+Skill Gap Analysis
+      │
+      ▼
+Foundation Skills
+      │
+      ▼
+Intermediate Skills
+      │
+      ▼
+Advanced Skills
+      │
+      ▼
+Projects / Experience
+      │
+      ▼
+Target Career Role
+```
 
-## 4. Intelligent Recommendations
+### 4. Intelligent Recommendations
 
 Future versions can incorporate additional signals such as:
 
@@ -446,7 +482,7 @@ Future versions can incorporate additional signals such as:
 
 ---
 
-# 🔒 Security & Privacy
+## 🔒 Security & Privacy
 
 Because TAAS can process assessment and user data, security and privacy are important platform requirements.
 
@@ -464,29 +500,29 @@ Recommended practices include:
 
 ---
 
-# 👨‍💻 Development Guidelines
+## 👨‍💻 Development Guidelines
 
-## Components
+### Components
 
 Prefer reusable React components instead of duplicating UI logic.
 
-## TypeScript
+### TypeScript
 
 Use explicit types for important application data and avoid unnecessary use of `any`.
 
-## Validation
+### Validation
 
 Use Zod and React Hook Form where appropriate for validated forms.
 
-## Data Fetching
+### Data Fetching
 
 Use TanStack Query for server-state operations where appropriate.
 
-## UI
+### UI
 
 Prefer the existing component system and Tailwind CSS instead of introducing unnecessary styling frameworks.
 
-## AI/ML
+### AI/ML
 
 AI/ML functionality should be designed with:
 
@@ -498,7 +534,7 @@ AI/ML functionality should be designed with:
 
 ---
 
-# 📜 Available Scripts
+## 📜 Available Scripts
 
 | Command | Description |
 |---|---|
@@ -512,16 +548,16 @@ AI/ML functionality should be designed with:
 
 ---
 
-# 🗺️ Future Roadmap
+## 🗺️ Future Roadmap
 
-## Assessment
+### Assessment
 
 - [ ] Expand skill-test question banks
 - [ ] Improve assessment analytics
 - [ ] Add more assessment types
 - [ ] Improve test reliability and validation
 
-## Proctoring
+### Proctoring
 
 - [ ] Improve object-detection reliability
 - [ ] Add configurable proctoring rules
@@ -529,7 +565,7 @@ AI/ML functionality should be designed with:
 - [ ] Add administrator review workflows
 - [ ] Improve privacy controls
 
-## AI/ML
+### AI/ML
 
 - [ ] AI-powered skill-gap analysis
 - [ ] Personalized career roadmaps
@@ -538,7 +574,7 @@ AI/ML functionality should be designed with:
 - [ ] Personalized assessment generation
 - [ ] AI-powered performance insights
 
-## Analytics
+### Analytics
 
 - [ ] User performance dashboards
 - [ ] Skill progression visualization
@@ -546,7 +582,7 @@ AI/ML functionality should be designed with:
 - [ ] Organization-level analytics
 - [ ] Cohort analysis
 
-## Platform
+### Platform
 
 - [ ] Improved role-based access control
 - [ ] Better administration tools
@@ -557,29 +593,31 @@ AI/ML functionality should be designed with:
 
 ---
 
-# 🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome.
 
-A typical contribution workflow:
+### Development Workflow
 
-    # Create a feature branch
-    git checkout -b feature/your-feature
+```bash
+# Create a feature branch
+git checkout -b feature/your-feature
 
-    # Install dependencies
-    npm install
+# Install dependencies
+npm install
 
-    # Start development
-    npm run dev
+# Start development
+npm run dev
 
-    # Run linting
-    npm run lint
+# Run linting
+npm run lint
 
-    # Run tests
-    npm run test
+# Run tests
+npm run test
 
-    # Build the project
-    npm run build
+# Build the project
+npm run build
+```
 
 When submitting a contribution, include:
 
@@ -591,7 +629,7 @@ When submitting a contribution, include:
 
 ---
 
-# 📄 License
+## 📄 License
 
 This project is currently maintained as part of the TAAS project.
 
@@ -599,53 +637,53 @@ Add the appropriate license information before publicly distributing the project
 
 ---
 
-# 🌟 TAAS Vision
+## 🌟 TAAS Vision
 
 TAAS aims to evolve from a traditional assessment platform into an intelligent talent-development ecosystem.
 
 The core concept is:
 
-    ┌─────────────────┐
-    │      USER       │
-    └────────┬────────┘
-             │
-             ▼
-    ┌─────────────────┐
-    │   ASSESSMENTS   │
-    └────────┬────────┘
-             │
-             ▼
-    ┌─────────────────┐
-    │  SKILL PROFILE  │
-    └────────┬────────┘
-             │
-             ▼
-    ┌─────────────────┐
-    │   AI ANALYSIS   │
-    └────────┬────────┘
-             │
-             ▼
-    ┌─────────────────┐
-    │   SKILL GAPS    │
-    └────────┬────────┘
-             │
-             ▼
-    ┌─────────────────┐
-    │ CAREER ROADMAP  │
-    └────────┬────────┘
-             │
-             ▼
-    ┌─────────────────┐
-    │     GROWTH      │
-    └─────────────────┘
+```text
+                 ┌─────────────────┐
+                 │      USER       │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │   ASSESSMENTS   │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │  SKILL PROFILE  │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │   AI ANALYSIS   │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │   SKILL GAPS    │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │ CAREER ROADMAP  │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │     GROWTH      │
+                 └─────────────────┘
+```
 
 ### Assess → Analyze → Personalize → Develop → Advance
 
 ---
 
-# 🛠️ Built With
-
-TAAS is built using modern web technologies including:
+## 🛠️ Built With
 
 **React • TypeScript • Vite • Tailwind CSS • Supabase • TanStack Query • TensorFlow.js • COCO-SSD • Radix UI • Framer Motion**
 
@@ -654,4 +692,3 @@ TAAS is built using modern web technologies including:
 <p align="center">
   Built with ❤️ for better talent assessment and career development.
 </p>
-
